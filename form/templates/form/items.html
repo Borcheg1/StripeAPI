@@ -7,7 +7,7 @@
 <body>
 {% for item in items %}
 <div>
-    <p> Название: {{ item.name }}</p>
+    <a href="http://localhost:8000/item/{{ item.id }}">{{ item.name }}</a>
     <p> Цена: {{ item.price }}</p>
 </div>
 {% endfor %}
