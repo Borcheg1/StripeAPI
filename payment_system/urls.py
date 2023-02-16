@@ -21,6 +21,7 @@ from form import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
+    path('', views.home, name="home"),
     path('item/', views.lists, name="list"),
     path('item/<int:id>/', views.detail, name="detail"),
     path('buy/<int:id>/', views.create_checkout_session, name="session"),

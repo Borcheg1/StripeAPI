@@ -54,3 +54,7 @@ def success(request):
 
 def cancelled(request):
     return render(request, 'form/cancelled.html')
+
+
+def home(request):
+    return render(request, 'form/home.html')
